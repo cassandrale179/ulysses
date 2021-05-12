@@ -7,28 +7,54 @@
 </head>
 <body>
   <div id="app" >
-    <div id="banner">
+    <div id="banner"> </div>
 
-    </div>
-
-    <div id="header">
-        <h1>Chapter III: Proteus</h1>
-        <h3> Hover over the underlined portion of the text to see annotations. </h3>
-        <img 
-            src="https://images.fineartamerica.com/images-medium-large-5/proteus-a-greek-sea-god-who-possessed-mary-evans-picture-library.jpg"
-            width="300"
-            class="center"
-        />
-
+    <div id="book">
+        <div id="header">
+            <h1>Chapter III: Proteus</h1>
+            <h4> Click on the underlined portion of the text to see annotations. </h4>
+            <img 
+                src="https://images.fineartamerica.com/images-medium-large-5/proteus-a-greek-sea-god-who-possessed-mary-evans-picture-library.jpg"
+                width="300"
+                class="center"
+            />
+        </div>
         <div id="content">
             <p>
-                Ineluctable modality of the visible: at least that if no more, thought through my eyes. Signatures of all things I am here to read, seaspawn and seawrack, the nearing tide, that rusty boot. Snotgreen, bluesilver, rust: coloured signs. <u>Limits of the diaphane </u>. But he adds: in bodies. Then he was aware of them bodies before of them coloured. How? By knocking his sconce against them, sure. Go easy. Bald he was and a millionaire, <u>maestro di color che sanno </u>. Limit of the diaphane in. Why in? Diaphane, adiaphane. If you can put your five fingers through it it is a gate, if not a door. Shut your eyes and see. </p>
+                Ineluctable modality of the visible: at least that if no more, thought through my eyes. Signatures of all things I am here to read, seaspawn and seawrack, the nearing tide, that rusty boot. Snotgreen, bluesilver, rust: coloured signs. Limits of the <u v-on:click="a = !a">diaphane.</u>
+    
+                <div v-if="a" class="popupbox center"> 
+                    <b>diaphane </b>: a term from ancient Greek. Here Stephen is contemplating Aristotle's theory of light and colour, which is found in two of Aristotle's works: On the Soul and Sense and Sensibilia.
+                </div>
+            
+    
+                But he adds: in bodies. Then he was aware of them bodies before of them coloured. How? By knocking his sconce against them, sure. Go easy. Bald he was and a millionaire, <u v-on:click="b = !b">maestro di color che sanno.</u> 
 
-                <p>Stephen closed his eyes to hear his boots crush crackling wrack and shells. You are walking through it howsomever. I am, a stride at a time. A very short space of time through very short times of space. <u>Five, six: the nacheinander </u>. Exactly: and that is the ineluctable modality of the audible. Open your eyes. No. Jesus! If I fell over a cliff that beetles o’er his base, fell through the nebeneinander ineluctably! I am getting on nicely in the dark. My ash sword hangs at my side. Tap with it: they do. My two feet in his boots are at the ends of his legs, nebeneinander. Sounds solid: made by <u>the mallet of Los Demiurgos </u>. Am I walking into eternity along <u>Sandymount strand? </u> Crush, crack, crick, crick. Wild sea money. <u>Dominie Deasy kens them a’. </u> </p>
+                <div v-if="b" class="popupbox center"> 
+                    The Italian phrase, which comes from Dante's Inferno, means "the master of those who know" and refers to Aristotle. 
+                </div>
+                
+                
+                Limit of the diaphane in. Why in? Diaphane, adiaphane. If you can put your five fingers through it it is a gate, if not a door. Shut your eyes and see. </p>
+    
+                <p>Stephen closed his eyes to hear his boots crush crackling wrack and shells. You are walking through it howsomever. I am, a stride at a time. A very short space of time through very short times of space. <u v-on:click="c = !c">Five, six: the nacheinander.</u> 
+                    
+                    <div v-if="c" class="popupbox center"> 
+                        Stephen describes the movement of his feet in German: nacheinander (one in front of the other) and nebeneinander (side by side). 
+                    </div>
+                    
+            Exactly: and that is the ineluctable modality of the audible. Open your eyes. No. Jesus! If I fell over <u  v-on:click="d = !d">a cliff that beetles o’er his base, </u> fell through the nebeneinander ineluctably!
+
+            <div v-if="d" class="popupbox center"> 
+                A line from Hamlet, Act 1, Scene 4 by Horatio. "What if it tempt you toward the flood, my lord,
+                Or to the dreadful summit of the cliff that beetles o'er his base into the sea". 
+            </div>
+            
+            
+            
+            I am getting on nicely in the dark. My ash sword hangs at my side. Tap with it: they do. My two feet in his boots are at the ends of his legs, nebeneinander. Sounds solid: made by <u>the mallet of Los Demiurgos </u>. Am I walking into eternity along <u>Sandymount strand? </u> Crush, crack, crick, crick. Wild sea money. <u>Dominie Deasy kens them a’. </u> </p>
         </div>
-        
     </div>
-
   </div>
 
   <script src="script.js">

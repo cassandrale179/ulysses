@@ -1,10 +1,11 @@
+Vue.component("modal", {
+    template: "#modal-template"
+  });
+
 var app = new Vue({
     el: '#app',
     data: {
-      greeting: 'Welcome to your Vue.js app!',
-      docsURL: 'http://vuejs.org/guide/',
-      discordURL: 'https://chat.vuejs.org',
-      forumURL: 'http://forum.vuejs.org/'
+      a: false, b: false, c: false, d: false, e: false, f: false, g: false, 
     },
     methods: {
       humanizeURL: function (url) {
